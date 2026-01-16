@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CMSGTechnical.Mediator.Tests.props" />
+</Project>

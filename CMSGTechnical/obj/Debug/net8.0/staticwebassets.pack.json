@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Konrad\\Source\\Repos\\CMSGTechnical\\CMSGTechnical\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CMSGTechnical.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CMSGTechnical.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Konrad\\Source\\Repos\\CMSGTechnical\\CMSGTechnical\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Konrad\\Source\\Repos\\CMSGTechnical\\CMSGTechnical\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Konrad\\Source\\Repos\\CMSGTechnical\\CMSGTechnical\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Konrad\\Source\\Repos\\CMSGTechnical\\CMSGTechnical\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CMSGTechnical.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CMSGTechnical.props",
+      "PackagePath": "build\\CMSGTechnical.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CMSGTechnical.props",
+      "PackagePath": "buildMultiTargeting\\CMSGTechnical.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CMSGTechnical.props",
+      "PackagePath": "buildTransitive\\CMSGTechnical.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

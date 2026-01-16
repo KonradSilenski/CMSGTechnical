@@ -1,0 +1,16 @@
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\bin\Debug\net8.0\CMSGTechnical.Repository.deps.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\bin\Debug\net8.0\CMSGTechnical.Repository.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\bin\Debug\net8.0\CMSGTechnical.Repository.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\bin\Debug\net8.0\CMSGTechnical.Domain.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\bin\Debug\net8.0\CMSGTechnical.Domain.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.csproj.AssemblyReference.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.AssemblyInfoInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.AssemblyInfo.cs
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.sourcelink.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTech.8B1E3CCB.Up2Date
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\refint\CMSGTechnical.Repository.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\CMSGTechnical.Repository.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Repository\obj\Debug\net8.0\ref\CMSGTechnical.Repository.dll

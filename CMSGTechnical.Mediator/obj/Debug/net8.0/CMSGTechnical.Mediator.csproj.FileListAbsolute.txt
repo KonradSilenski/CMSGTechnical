@@ -1,0 +1,16 @@
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\bin\Debug\net8.0\CMSGTechnical.Mediator.deps.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\bin\Debug\net8.0\CMSGTechnical.Mediator.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\bin\Debug\net8.0\CMSGTechnical.Mediator.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\bin\Debug\net8.0\CMSGTechnical.Domain.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\bin\Debug\net8.0\CMSGTechnical.Domain.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.csproj.AssemblyReference.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.AssemblyInfoInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.AssemblyInfo.cs
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.sourcelink.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTech.A7519ADB.Up2Date
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\refint\CMSGTechnical.Mediator.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\CMSGTechnical.Mediator.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Mediator\obj\Debug\net8.0\ref\CMSGTechnical.Mediator.dll

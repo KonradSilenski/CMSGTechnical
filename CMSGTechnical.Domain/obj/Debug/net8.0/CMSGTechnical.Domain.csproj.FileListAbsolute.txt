@@ -1,0 +1,12 @@
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\bin\Debug\net8.0\CMSGTechnical.Domain.deps.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\bin\Debug\net8.0\CMSGTechnical.Domain.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\bin\Debug\net8.0\CMSGTechnical.Domain.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.AssemblyInfoInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.AssemblyInfo.cs
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.sourcelink.json
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\refint\CMSGTechnical.Domain.dll
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\CMSGTechnical.Domain.pdb
+C:\Users\Konrad\Source\Repos\CMSGTechnical\CMSGTechnical.Domain\obj\Debug\net8.0\ref\CMSGTechnical.Domain.dll
