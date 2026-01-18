@@ -1,1 +1,12 @@
-﻿
+﻿.menu-item {
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+    .menu-item:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }

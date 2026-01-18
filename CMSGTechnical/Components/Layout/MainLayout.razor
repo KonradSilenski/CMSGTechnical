@@ -4,9 +4,10 @@
 @using CMSGTechnical.Mediator.Basket
 @using MediatR
 @inherits LayoutComponentBase
+@inject BasketService BasketService
 
 <div class="page">
-    <CascadingValue TValue="BasketService" Value="@BasketService">
+    <CascadingValue Value="BasketService">
         <div class="sidebar">
             <NavMenu/>
         </div>
@@ -30,17 +31,17 @@
 </div>
 
 
-@code
-{
-    private BasketService BasketService { get; set; }
+@code {
+    private bool _loaded;
 
-    [Inject] private IMediator Mediator { get; set; } = default!;
-
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        var basket = await Mediator.Send(new GetBasket(1));
-        BasketService = new BasketService(basket);
+        if (!firstRender || _loaded)
+            return;
+
+        _loaded = true;
+
+        await BasketService.LoadAsync();
+        StateHasChanged();
     }
-
-
 }

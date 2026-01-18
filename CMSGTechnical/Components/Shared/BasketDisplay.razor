@@ -4,56 +4,86 @@
 @using CMSGTechnical.Mediator.Dtos
 @using MediatR
 
-<div class="basket">
-    
-    @foreach (var item in Basket.MenuItems)
-    {
 
-        <div>
-            <div>
-                @item.Name - @item.Price
-            </div>
-            
-            <div>
-                <button class="btn btn-primary btn-round" @onclick="() => Basket.MenuItems.Add(item)">+</button>
-                <button class="btn btn-primary btn-round" @onclick="() => Basket.MenuItems.Remove(item)">-</button>
+<div class="basket container-fluid p-2">
+
+    @foreach (var stack in BasketService.Basket.MenuItems.GroupBy(i => i.Id))
+    {
+        var item = stack.First();
+        var quant = stack.Count();
+        var total = item.Price * quant;
+
+        <div class="card mb-2 shadow-sm">
+            <div class="card-body p-2">
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center">
+
+                    <div class="mb-2 mb-sm-0">
+                        <div class="fw-bold">@item.Name</div>
+                        <div class="text-muted small">
+                            Qty: @quant · £@total
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm btn-primary"
+                                @onclick="() => BasketService.Add(item)">
+                            +
+                        </button>
+
+                        <button class="btn btn-sm btn-outline-primary"
+                                @onclick="() => BasketService.Remove(item)">
+                            -
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </div>
     }
-    
-    <div class="mt-3">
-        Total: @Basket.MenuItems.Sum(i=>i.Price)
+
+    @if (!BasketService.Basket.MenuItems.Any())
+    {
+        <span class="text-muted">The basket is empty.</span>
+    }
+
+
+    <div class="card mt-3">
+        <div class="card-body p-2">
+
+            <div class="d-flex justify-content-between">
+                <span>Items</span>
+                <span>£@BasketService.Basket.MenuItems.Sum(i => i.Price)</span>
+            </div>
+
+            <div class="d-flex justify-content-between text-dark">
+                <span>Delivery</span>
+                <span>£2</span>
+            </div>
+
+            <hr class="my-2" />
+
+            <div class="d-flex justify-content-between fw-bold text-dark">
+                <span>Total</span>
+                <span>£@(BasketService.Basket.MenuItems.Sum(i => i.Price) + 2)</span>
+            </div>
+
+        </div>
     </div>
 </div>
 
 
+
 @code {
-
-
-
-    [Inject] private IMediator Mediator { get; set; } = default!;
-
-    private BasketDto Basket { get; set; } = new();
     [CascadingParameter]
-    private BasketService BasketService { get; set; }
+    private BasketService BasketService { get; set; } = default!;
 
     protected override void OnInitialized()
     {
-        Basket = BasketService.Basket;
-        BasketService.OnChange += (sender, args) => StateHasChanged();
+        BasketService.OnChange += HandleChange;
     }
 
-
-    public void AddItem(MenuItemDto item)
-    {
-        Basket.MenuItems.Add(item);
-        StateHasChanged();
-    }
-
-    public void Remove(MenuItemDto item)
-    {
-        Basket.MenuItems.Remove(item);
-    }
-
+    private void HandleChange(object? sender, EventArgs e)
+        => InvokeAsync(StateHasChanged);
 
 }

@@ -10,9 +10,17 @@
 
 
 
-@for (var i = 0; i < MenuItems.Count(); i++) {
-    var item = MenuItems[i];
-    <MenuItemDisplay Item="@item" OnAdd="() => AddItem(i)" />
+@foreach (var categoryGroup in MenuItems.GroupBy(i => i.Category))
+{
+    <div class="mt-4">
+        <h4 class="fw-bold">@categoryGroup.Key</h4>
+
+        @foreach (var item in categoryGroup.OrderBy(i => i.Price))
+        {
+            <MenuItemDisplay Item="item"
+                             OnAdd="() => AddItem(item.Id)" />
+        }
+    </div>
 }
 
 

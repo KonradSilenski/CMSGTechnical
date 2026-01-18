@@ -16,6 +16,7 @@ namespace CMSGTechnical.Domain.Models
         public decimal Price { get; set; }
 
         public int Order { get; set; } = 0;
+        public string? Category { get; set; }
 
         public ICollection<MenuItem> ChildItems { get; set; } = new List<MenuItem>();
     }

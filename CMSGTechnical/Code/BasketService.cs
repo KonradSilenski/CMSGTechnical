@@ -3,6 +3,8 @@ using CMSGTechnical.Mediator.Basket;
 using CMSGTechnical.Mediator.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+using System.Security.Cryptography;
 
 namespace CMSGTechnical.Code
 {
@@ -12,31 +14,65 @@ namespace CMSGTechnical.Code
         public BasketDto Basket { get; set; }
     }
 
-
-    public class BasketService
+public class BasketService
     {
+        private const string StorageKey = "basket";
 
-        public event EventHandler<BasketChangedEventArgs> OnChange;
+        private readonly ProtectedLocalStorage _localStorage;
 
-        public BasketDto Basket { get; }
+        public BasketDto Basket { get; private set; } = new();
+        public event EventHandler? OnChange;
 
-        public BasketService(BasketDto basket)
+        public BasketService(ProtectedLocalStorage localStorage)
         {
-            Basket = basket;
+            _localStorage = localStorage;
         }
 
+		public async Task LoadAsync()
+		{
+			try
+			{
+				var result = await _localStorage.GetAsync<BasketDto>(StorageKey);
 
-        public async Task Add(MenuItemDto item)
+				if (result.Success && result.Value != null)
+				{
+					Basket = result.Value;
+					NotifyStateChanged();
+				}
+			}
+			catch (CryptographicException)
+			{
+				await _localStorage.DeleteAsync(StorageKey);
+				Basket = new BasketDto();
+			}
+		}
+
+
+		public async Task Add(MenuItemDto item)
         {
             Basket.MenuItems.Add(item);
-            OnChange(this, new BasketChangedEventArgs(){Basket = Basket});
+            await PersistAsync();
         }
 
         public async Task Remove(MenuItemDto item)
         {
-            Basket.MenuItems.Remove(item);
-            OnChange(this, new BasketChangedEventArgs() { Basket = Basket });
+            var existing = Basket.MenuItems.FirstOrDefault(i => i.Id == item.Id);
+            if (existing != null)
+            {
+                Basket.MenuItems.Remove(existing);
+                await PersistAsync();
+            }
         }
 
+        private async Task PersistAsync()
+        {
+            await _localStorage.SetAsync(StorageKey, Basket);
+            NotifyStateChanged();
+        }
+
+        private void NotifyStateChanged()
+            => OnChange?.Invoke(this, EventArgs.Empty);
     }
+
+
 }

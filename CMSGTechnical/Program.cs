@@ -1,8 +1,10 @@
+using CMSGTechnical.Code;
 using CMSGTechnical.Components;
 using CMSGTechnical.Domain.Interfaces;
 using CMSGTechnical.Domain.Models;
 using CMSGTechnical.Mediator;
 using CMSGTechnical.Repository;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +21,9 @@ builder.Services.AddDbContextFactory<ApplicationDbContext>(optionsBuilder =>
 
 
 builder.Services.AddScoped(typeof(IRepo<>), typeof(Repo<>));
+builder.Services.AddScoped<BasketService>();
+builder.Services.AddScoped<ProtectedLocalStorage>();
+
 builder.Services.AddMediatR(configuration =>
 {
     configuration.Lifetime = ServiceLifetime.Scoped;
